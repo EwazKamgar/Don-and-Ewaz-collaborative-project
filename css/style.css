@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --cyan-color: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.card {
+    padding: 50px;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: "Lexend Deca";
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+p {
+    font-weight: 400;
+    font-family: "Big Shoulders Display";
+    line-height: 1.5;
+
+}
+
+.text-color {
+    color: white;
+}
+
+.card-1 {
+    background-color: var(--bright-orange);
+}
+
+.card-2 {
+    background-color: var(--cyan-color);
+}
+
+.card-3 {
+    background-color: var(--dark-cyan);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.card-1 button {
+    color: var(--bright-orange);
+}
+
+.card-1 button:hover {
+    color: white;
+    border: 2px solid white;
+    background: var(--bright-orange);
+}
+
+.card-2 button {
+    color: var(--cyan-color);
+}
+
+.card-2 button:hover {
+    color: white;
+    border: 2px solid white;
+    background: var(--cyan-color);
+}
+
+.card-3 button {
+    color: var(--dark-cyan);
+}
+
+.card-3 button:hover {
+    color: white;
+    border: 2px solid white;
+    background: var(--dark-cyan);
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        flex-direction: row;
+    }
+}
